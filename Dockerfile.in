@@ -1,4 +1,6 @@
-FROM debian:stretch-20190326-slim
+ARG DOCKER_IMAGE=debian:bullseye-slim
+FROM $DOCKER_IMAGE
+
 MAINTAINER Matt McCormick "matt.mccormick@kitware.com"
 
 #include "common.debian"
